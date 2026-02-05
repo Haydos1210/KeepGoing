@@ -26,7 +26,7 @@ public class InputController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector2 moveInput = move.ReadValue<Vector2>();
         playerController.MoveCar(moveInput, t);
