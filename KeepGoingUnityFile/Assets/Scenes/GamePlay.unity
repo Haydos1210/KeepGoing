@@ -1020,8 +1020,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 108
-  m_CollisionDetection: 0
+  m_Constraints: 124
+  m_CollisionDetection: 2
 --- !u!850595691 &481223275
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1509,12 +1509,13 @@ GameObject:
   - component: {fileID: 681054702}
   - component: {fileID: 681054701}
   - component: {fileID: 681054703}
+  - component: {fileID: 681054704}
   m_Layer: 0
   m_Name: RoadWall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &681054701
 BoxCollider:
@@ -1531,12 +1532,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6289635, y: 1, z: 19.63152}
-  m_Center: {x: -0.894454, y: 0, z: 15.806955}
+  m_Size: {x: 0, y: 4.71054, z: 19.63152}
+  m_Center: {x: -1.2089357, y: 1.8552694, z: 15.806955}
 --- !u!4 &681054702
 Transform:
   m_ObjectHideFlags: 0
@@ -1546,7 +1547,7 @@ Transform:
   m_GameObject: {fileID: 681054700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: -16.33544}
+  m_LocalPosition: {x: -12, y: 0, z: -16.33544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1560,7 +1561,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681054700}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1577,8 +1578,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
+  m_Constraints: 110
+  m_CollisionDetection: 2
+--- !u!114 &681054704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681054700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1614d79f1d32ac945b52b1d26af4b7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerOffRoad
 --- !u!1 &734752169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,12 +3437,13 @@ GameObject:
   - component: {fileID: 2100161635}
   - component: {fileID: 2100161634}
   - component: {fileID: 2100161636}
+  - component: {fileID: 2100161637}
   m_Layer: 0
-  m_Name: RoadWall1 (1)
+  m_Name: RoadWall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &2100161634
 BoxCollider:
@@ -3446,12 +3460,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6289635, y: 1, z: 19.63152}
-  m_Center: {x: -0.894454, y: 0, z: 15.806955}
+  m_Size: {x: 0, y: 5.458246, z: 19.63152}
+  m_Center: {x: -0.57997227, y: 2.2291236, z: 15.806955}
 --- !u!4 &2100161635
 Transform:
   m_ObjectHideFlags: 0
@@ -3461,7 +3475,7 @@ Transform:
   m_GameObject: {fileID: 2100161633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 0, z: -16.33544}
+  m_LocalPosition: {x: 14, y: 0, z: -16.33544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3475,7 +3489,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100161633}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3492,8 +3506,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!114 &2100161637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100161633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1614d79f1d32ac945b52b1d26af4b7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerOffRoad
 --- !u!1 &2121652628
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 25
+  controlID: 27
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 24
+  controlID: 118
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 51
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -270,7 +270,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 389
-    height: 426
+    height: 425
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 18}
@@ -294,9 +294,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 426
+    y: 425
     width: 389
-    height: 507
+    height: 508
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
   m_ActualView: {fileID: 15}
@@ -413,9 +413,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1
-    y: 450
+    y: 449
     width: 387
-    height: 481
+    height: 482
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Course Library/Obstacles
+    - Assets/Scripts/RoadScripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -447,17 +447,16 @@ MonoBehaviour:
     m_FilterByTypeIntersection: 0
   m_ViewMode: 0
   m_StartGridSize: 32
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: 32
-  m_LastProjectPath: C:\Users\Hayden\Unity projects\Prototype 1
+  m_LastProjectPath: C:\Users\Hayden\OneDrive\Desktop\Unity projects\Scavenge game\KeepGoing\KeepGoing\KeepGoingUnityFile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 6e910000
     m_LastClickedID: 37230
-    m_ExpandedIDs: 000000006c8700009a8700009c8700009e870000a0870000a2870000a4870000a6870000a8870000aa870000ac870000ae870000b0870000b2870000b4870000b6870000b8870000ba870000bc870000be870000c0870000c2870000c4870000c6870000c8870000ca870000
+    m_ExpandedIDs: 0000000084870000b2870000b4870000b6870000b8870000ba870000bc870000be870000c0870000c2870000c4870000c6870000c8870000ca870000cc870000ce870000d0870000d2870000d4870000d6870000d8870000da870000dc870000de870000e0870000e2870000e4870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,10 +482,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 480}
+    scrollPos: {x: 0, y: 732}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c8700009a8700009c8700009e870000a0870000a2870000a4870000a6870000a8870000aa870000ac870000ae870000b0870000b2870000b4870000b6870000b8870000ba870000bc870000be870000c0870000c2870000c4870000c6870000c8870000ca870000
+    m_ExpandedIDs: 0000000084870000b2870000b4870000b6870000b8870000ba870000bc870000be870000c0870000c2870000c4870000c6870000c8870000ca870000cc870000ce870000d0870000d2870000d4870000d6870000d8870000da870000dc870000de870000e0870000e2870000e4870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1042,9 +1041,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -1.5201906, y: 22.266716, z: -25.790812}
+    m_Target: {x: -3.7037985, y: 6.1308165, z: -7.2588286}
     speed: 2
-    m_Value: {x: -1.5201906, y: 22.266716, z: -25.790812}
+    m_Value: {x: -3.7037985, y: 6.1308165, z: -7.2588286}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1090,13 +1089,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09725948, y: -0.1768687, z: 0.017550888, w: 0.9792554}
+    m_Target: {x: -0.020934321, y: -0.07145748, z: 0.0015318639, w: -0.99724036}
     speed: 2
-    m_Value: {x: -0.09725948, y: 0.1768687, z: -0.017550888, w: -0.9792554}
+    m_Value: {x: -0.020934321, y: -0.07145748, z: 0.0015318639, w: -0.99724036}
   m_Size:
-    m_Target: 2.5543187
+    m_Target: 1.9377395
     speed: 2
-    m_Value: 2.5543187
+    m_Value: 1.9377395
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1154,7 +1153,7 @@ MonoBehaviour:
     x: 1
     y: 24
     width: 387
-    height: 400
+    height: 399
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1171,7 +1170,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff
+      m_ExpandedIDs: 1afbffff3285000068850000a6850000de850000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
