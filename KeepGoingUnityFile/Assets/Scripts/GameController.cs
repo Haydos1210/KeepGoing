@@ -24,7 +24,6 @@ public class GameController : MonoBehaviour
     // other scripts should call this when game should end()
     public void EndGame()
     {
-        Debug.Log("GameEnd called! Health: " + HealthController.Instance.GetHealth());
         Time.timeScale = 0f;
         UICanvas.SetActive(false);
         gameOverCanvas.SetActive(true);

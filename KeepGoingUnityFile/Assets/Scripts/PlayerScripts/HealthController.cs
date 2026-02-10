@@ -4,7 +4,7 @@ using UnityEngine;
 public class HealthController : MonoBehaviour
 {
     [Header("Vars")]
-    private float maxHealth = 2500;
+    private float maxHealth;
     private float health;
     [SerializeField] private TextMeshProUGUI healthText;
     public static HealthController Instance;
@@ -12,6 +12,8 @@ public class HealthController : MonoBehaviour
 
     private void Start()
     {
+        maxHealth = VehicleStatsController.Instance.GetHealth();
+        Debug.Log("Here is max health:" + maxHealth);
         healthText.text = maxHealth.ToString();
         health = maxHealth;
     }
@@ -46,6 +48,8 @@ public class HealthController : MonoBehaviour
     {
         return health;
     }
+
+    // TODO: set max health function
 
     // TODO: AddHealth function for powerups -  maybe make new script for powerups(powerups class)
 }

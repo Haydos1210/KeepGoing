@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Windows;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] private Transform carVisual;
     [SerializeField] private Transform orientation;

@@ -8,7 +8,7 @@ public class InputController : MonoBehaviour
     private float t = 0;
 
     [Header("References")]
-    [SerializeField] private PlayerController playerController;
+    [SerializeField] private PlayerMovementController playerController;
     private CarControls carControls;
     private void Awake()
     {
