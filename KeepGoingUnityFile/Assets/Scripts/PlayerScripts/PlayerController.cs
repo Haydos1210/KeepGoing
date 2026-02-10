@@ -35,14 +35,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //if (collision.gameObject.CompareTag("Obstacle") && collision.gameObject.CompareTag("Obstacle"))
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             float shakeStrength = collision.gameObject.GetComponent<Rigidbody>().mass * shakeStrengthAdjustment;
             Debug.Log("shakeStrength: " + shakeStrength);
             CamShakeController.ShakeCamera(shakeStrength, shakeDuration);
+
             float healthLost = shakeStrength * convToHealth;
             HealthController.Instance.SubtractHealth(healthLost);
+
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
             // TODO: damage handling(health and smoke animation) => ui for health
         }
     }

@@ -4,6 +4,9 @@ public class PlayerOffRoad : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        GameController.Instance.EndGame();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            GameController.Instance.EndGame();
+        }
     }
 }

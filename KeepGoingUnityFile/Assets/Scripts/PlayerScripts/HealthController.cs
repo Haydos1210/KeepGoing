@@ -42,5 +42,10 @@ public class HealthController : MonoBehaviour
         health = maxHealth;
     }
 
+    public float GetHealth()
+    {
+        return health;
+    }
+
     // TODO: AddHealth function for powerups -  maybe make new script for powerups(powerups class)
 }
