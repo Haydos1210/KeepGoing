@@ -15,10 +15,13 @@ public class CarSelectionUI : MonoBehaviour
     private const int blueBusIndex = 3;
     private const int armourCarIndex = 4;
 
+    private void Start()
+    {
+        index = 0;
+    }
+
     public void ViewNextVehicle()
     {
-        if (SelectionCamController.Instance.IsMoving()) return;
-
         if (index == blueBusIndex)
         {
             rightArrowBtn.SetActive(false);
@@ -31,14 +34,11 @@ public class CarSelectionUI : MonoBehaviour
         {
             return;
         }
-        SelectionCamController.Instance.MoveRight();
         index++;
     }
 
     public void ViewPreviousVehicle()
     {
-        if (SelectionCamController.Instance.IsMoving()) return;
-
         if (index == blueCarIndex)
         {
             leftArrowBtn.SetActive(false);
@@ -51,7 +51,6 @@ public class CarSelectionUI : MonoBehaviour
         {
             return;
         }
-        SelectionCamController.Instance.MoveLeft();
         index--;
     }
 
