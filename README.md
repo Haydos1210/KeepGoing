@@ -1,3 +1,3 @@
 # KeepGoing
-infinite generating car game
+infinite generating car game.
 Play Here: https://haydosfuu.itch.io/keep-going
