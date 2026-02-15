@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenuUI : MonoBehaviour
 {
     
     public void StartGame()
     {
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("CarSelection");
     }
 
     public void QuitGame()

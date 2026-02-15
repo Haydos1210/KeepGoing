@@ -4,4 +4,5 @@ public abstract class VehicleStats
 {
     public abstract float GetVehicleHealth();
     public abstract float GetVehicleSpeed();
+    // Todo: vehcile turn speed
 }

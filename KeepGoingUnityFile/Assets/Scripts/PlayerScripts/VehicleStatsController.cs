@@ -2,26 +2,27 @@ using UnityEngine;
 
 public class VehicleStatsController : MonoBehaviour
 {
-    private VehicleStats vehicleStats;
+    private float health;
+    private float speed;
     public static VehicleStatsController Instance;
     private void Awake()
     {
         Instance = this;
-        vehicleStats = new BasicCarStats();
     }
 
-    public void SetCarStats(VehicleStats diffVehicleStats)
+    public void ApplyStats(CarData data)
     {
-        vehicleStats = diffVehicleStats;
+        speed = data.speed;
+        health = data.health;
     }
 
     public float GetHealth()
     {
-        return vehicleStats.GetVehicleHealth();
+        return health;
     }
 
     public float GetSpeed()
     {
-        return vehicleStats.GetVehicleSpeed();
+        return speed;
     }
 }

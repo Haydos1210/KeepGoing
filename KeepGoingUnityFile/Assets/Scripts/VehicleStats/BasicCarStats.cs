@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class BasicCarStats : VehicleStats
 {
+    private float redCarHealth = 2000;
+    private float redCarSpeed = 60;
     public override float GetVehicleHealth()
     {
-        return 2000;
+        return redCarHealth;
     }
 
     public override float GetVehicleSpeed()
     {
-        return 60;
+        return redCarSpeed;
     }
 }

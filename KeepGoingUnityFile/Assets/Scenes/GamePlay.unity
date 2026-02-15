@@ -211,6 +211,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &78901126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 78901127}
+  - component: {fileID: 78901128}
+  m_Layer: 0
+  m_Name: VehicleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &78901127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78901126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -65.37277, y: 0, z: 45.99805}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &78901128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78901126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48258b00436c12042a6437de34ba0c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleSelectionManager
+  player: {fileID: 426849146}
+  cars:
+  - {fileID: 11400000, guid: c8a4d52b69d97674cb6dc1cb27c90a8c, type: 2}
+  - {fileID: 11400000, guid: 8101a1bc9d36a8f40b08190c47b45225, type: 2}
+  - {fileID: 11400000, guid: 6b29cd2dd40c844488c7ee17309dd57e, type: 2}
+  - {fileID: 11400000, guid: d17919c739dc15445ad7e6a8910cd8a0, type: 2}
+  - {fileID: 11400000, guid: 1bef548dbadfe794aa25f1766e856352, type: 2}
 --- !u!1 &95213223
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,6 +3108,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3383130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: a7dca03bf1b6f9b46b6916fa5450f775, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4154,6 +4209,7 @@ SceneRoots:
   - {fileID: 2020770986}
   - {fileID: 64968049}
   - {fileID: 980369494}
+  - {fileID: 78901127}
   - {fileID: 675567757}
   - {fileID: 56038064}
   - {fileID: 1482117697}

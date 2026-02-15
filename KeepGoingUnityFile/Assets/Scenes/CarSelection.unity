@@ -922,7 +922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &811819665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -985,7 +985,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811819667}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1569846889}
+        m_TargetAssemblyTypeName: CarSelection, Assembly-CSharp
+        m_MethodName: ViewPreviousVehicle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &811819667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,6 +1104,7 @@ GameObject:
   - component: {fileID: 846355911}
   - component: {fileID: 846355910}
   - component: {fileID: 846355909}
+  - component: {fileID: 846355912}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1167,12 +1180,24 @@ Transform:
   m_GameObject: {fileID: 846355908}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2025297, y: -0, z: -0, w: 0.9792761}
-  m_LocalPosition: {x: -40, y: 4.07, z: -9.77}
+  m_LocalPosition: {x: -80, y: 4.07, z: -9.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 23.37, y: 0, z: 0}
+--- !u!114 &846355912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846355908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50256dd50746b3f4facdae240183ab7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectionCamController
 --- !u!1001 &876385615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1312,7 +1337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 951438234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1569846889}
+        m_TargetAssemblyTypeName: CarSelection, Assembly-CSharp
+        m_MethodName: SelectVehicle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &951438234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1505,6 +1542,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68840c673a0b18e41a044ed077548d55, type: 3}
+--- !u!1 &1299233838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299233839}
+  m_Layer: 0
+  m_Name: '- - - - - - - -Controllers- - - - - - - -'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299233839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299233838}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -61.2063, y: 2.70313, z: -2.32174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401050229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1793,53 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -80, y: 0, z: -0.5700002}
   m_LocalScale: {x: 6, y: 0.05, z: 6}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1569846888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1569846890}
+  - component: {fileID: 1569846889}
+  m_Layer: 0
+  m_Name: UIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1569846889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569846888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad8b6a5e8949044e9c85ac25474b044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarSelection
+  rightArrowBtn: {fileID: 2141706804}
+  leftArrowBtn: {fileID: 811819664}
+  selectBtn: {fileID: 951438231}
+--- !u!4 &1569846890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569846888}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -61.2063, y: 2.70313, z: -2.32174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2177,7 +2292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2141706807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1569846889}
+        m_TargetAssemblyTypeName: CarSelection, Assembly-CSharp
+        m_MethodName: ViewNextVehicle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2141706807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,3 +2368,5 @@ SceneRoots:
   - {fileID: 253659749}
   - {fileID: 1850088340}
   - {fileID: 174047539}
+  - {fileID: 1299233839}
+  - {fileID: 1569846890}
